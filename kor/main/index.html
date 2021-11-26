@@ -38,29 +38,82 @@
     <!-- --------------------Script-------------------- -->
     <script src="../js/jquery.js"></script>
     <script src="../js/swiper.js"></script>
-    <script src="../js/common.js"></script>
     <!-- --------------------Script-------------------- -->
 
 </head>
 
 <body>
+
+    <!-- new_header -->
     <header>
+        <nav class="header_wrap">
 
-        <section class="header_wrap">
-            <!-- header_left -->
-            <nav class="header_left">
-                <h1 class="logo">
-                    <img src="" alt="">
-                </h1>
-            </nav>
-            <!-- header_left -->
+            <h1 class="header_left">
+                <a href="../main/index.html">
+                    <img src="../images/ico/logo.png" alt="">
+                </a>
+            </h1>
 
-            <nav class="header_center">
-            </nav>
+            <ul class="header_center">
+                <li>
+                    <a href="#none">ABOUT US</a>
+                    <ul class="depth_01">
+                        <li><a href="#none">CEO 인사말</a></li>
+                        <li><a href="#none">회사정보</a></li>
+                        <!-- <li><a href="../company/expert.html">자산운용전문인력</a></li> -->
+                        <li><a href="#none">CI&nbsp;소개</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#none">PRODUCT</a>
+                    <ul class="depth_01">
+                        <li><a href="#none">리츠&nbsp;퍼포먼스</a></li>
+                        <li><a href="#none">운용&nbsp;현황</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#none">SHOP</a>
+                    <ul class="depth_01">
+                        <li><a href="#none">공시자료</a></li>
+                        <li><a href="#none">입찰·공모·모집</a></li>
+                        <li><a href="#none">공지사항</a></li>
+                        <li><a href="#none">보도자료</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#none">COMMUNITY</a>
+                    <ul class="depth_01">
+                        <li><a href="#none">인재상</a></li>
+                        <li><a href="#none">복리후생</a></li>
+                        <li><a href="#none">채용공고</a></li>
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="#none">CONTACT</a>
+                    <ul class="depth_01">
+                        <li><a href="#none">FAQ·자료실</a></li>
+                        <li><a href="#none">관련기관</a></li>
+                        <li><a href="#none">오시는길</a></li>
+                    </ul>
+                </li>
+
+
+
+                <div class="header_bg">
+                    <!-- <p>Seoulreits</p> -->
+                </div>
+            </ul>
 
             <nav class="header_right">
+                <span></span>
+                <span></span>
+                <span></span>
             </nav>
-        </section>
+        </nav>
     </header>
 
     <!-----------------------------header----------------------------->
@@ -74,19 +127,30 @@
             <div class="mv_wrap swiper-wrapper">
 
                 <figure class="mv mv_01 swiper-slide">
-                    <img class="mv_img" src="https://via.placeholder.com/1000x500" alt="메인 비쥬얼 이미지 01">
+                    <img class="mv_img" src="../images/main/mv_01.png" alt="메인 비쥬얼 이미지 01">
                     <figcaption>
                         <p class="mv_text">
-                            <span class="text_01">test_01</span>
-                            <span class="text_02"></span>
-                            <span class="text_03"></span>
+                            <span class="text_01">
+                                <i>World Best!</i> 
+                                <br class="pc_only">
+                                <strong>Touching screen in the water</strong> 
+                            </span>
+                            <span class="text_02">
+                                <strong>세계 유일!</strong>
+                                이젠 수중세계를 
+                                <strong>수중터치 방수팩</strong>
+                                으로 즐겨보세요.
+                            </span>
+                            <span class="text_03">
+                                view more
+                            </span>
                         </p>
                     </figcaption>
                 </figure>
 
 
                 <figure class="mv mv_02 swiper-slide">
-                    <img class="mv_img" src="https://via.placeholder.com/600x300" alt="메인 비쥬얼 이미지 01">
+                    <img class="mv_img" src="../images/main/mv_02.png" alt="메인 비쥬얼 이미지 01">
                     <figcaption>
                         <p class="mv_text">
                             <span class="text_01">mv_02</span>
@@ -97,7 +161,7 @@
                 </figure>
 
                 <figure class="mv mv_03 swiper-slide">
-                    <img class="mv_img" src="https://via.placeholder.com/600x300" alt="메인 비쥬얼 이미지 01">
+                    <img class="mv_img" src="../images/main/mv_03.png" alt="메인 비쥬얼 이미지 01">
                     <figcaption>
                         <p class="mv_text">
                             <span class="text_01">test_03</span>
@@ -109,6 +173,7 @@
 
             </div>
 
+            <div class="swiper-pagination"></div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
         </section>

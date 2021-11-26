@@ -3,19 +3,19 @@ $(document).ready(function(){
     // common_js_start
 
     var Mainswiper = new Swiper('.main_section_01', {
-        slidesPerView: 1.5,
+        effect: "fade",
+        slidesPerView: 1,
         centeredSlides: true,
         loop: true,
         loopAdditionalSlides : 1,
-        spaceBetween: 100,
         
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
-        },
+        // autoplay: {
+        //     delay: 5000,
+        //     disableOnInteraction: false,
+        // },
         pagination: {
             el: '.swiper-pagination',
-            type: 'fraction',
+            type: 'bullets',
         },
         navigation: {
             nextEl: '.swiper-button-next',

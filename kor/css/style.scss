@@ -1,5 +1,214 @@
 @import url("./common.css");
 
+@mixin max_width($width) {
+    max-width: $width;
+    margin: 0 auto;
+}
+
+
+//	font-family: 'asn-l', 'asn-bold', 'asn-thin';
+
+
+// new_header 
+header {
+    z-index: 9999;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 85px;
+    background: rgba($color: #000000, $alpha: 0);
+    transition: .3s;
+    a {
+        color: #fff;
+    }
+    .depth_01 {}
+
+    .header_wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 auto;
+        padding: 0 40px;
+        max-width: 2560px;
+
+        // logo
+        .header_left {
+            margin-top: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        // center_menu
+        .header_center {
+            width: 80%;
+            height: 85px;
+            margin: 0 auto;
+            max-width: 800px;
+            display: flex;
+
+            a {
+                display: block;
+                word-break: keep-all;
+            }
+
+            .header_bg {
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: -1;
+                background: #fff;
+                width: 100%;
+                margin-top: 85px;
+                height: calc(270px - 85px);
+                display: none;
+            }
+
+            >li {
+                width: 20%;
+                font-size: 1.8rem;
+                height: 100%;
+                text-align: center;
+                line-height: 35px;
+                transition: .3s;
+
+                >a {
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: relative;
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        height: 2px;
+                        width: 100%;
+                        background: #245B9A;
+                        opacity: 0;
+                        transition: .3s;
+                    }
+
+                    &:hover::after {
+                        opacity: 1;
+                    }
+                }
+
+                .depth_01 {
+                    padding-top: 10px;
+                    transition: .3s;
+                    font-size: 1.6rem;
+                    font-weight: 300;
+
+                    li {
+                        transition: .3s;
+
+                        a {
+                            transition: .3s;
+                            color: #666;
+                            position: relative;
+
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                left: 0;
+                                bottom: 0;
+                                height: 2px;
+                                width: 100%;
+                                background: #245B9A;
+                                opacity: 0;
+                                transition: .3s;
+                            }
+
+                            &:hover {
+                                color: #245B9A;
+                            }
+
+                            &:hover::after {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .depth_01 {
+                display: none;
+            }
+        }
+
+        // header_right 
+        .header_right {
+            position: relative;
+            width: 22px;
+            height: 22px;
+            cursor: pointer;
+
+            span {
+                // 햄벅
+                display: none;
+                position: absolute;
+                left: 0;
+                width: 22px;
+                border-bottom: 2px solid #000;
+                transition: .3s;
+
+                &:nth-of-type(1) {
+                    top: 0;
+                }
+
+                &:nth-of-type(2) {
+                    top: calc(50% - 1px);
+                }
+
+                &:nth-of-type(3) {
+                    bottom: 0;
+                }
+            }
+
+
+            &.active {
+                span:nth-of-type(1) {
+                    transform: rotate(45deg);
+                    top: calc(50% - 1px);
+                }
+
+                span:nth-of-type(2) {
+                    opacity: 0;
+                }
+
+                span:nth-of-type(3) {
+                    transform: rotate(-45deg);
+                    bottom: calc(50% - 1px);
+                    -webkit-transform: rotate(-45deg);
+                    -moz-transform: rotate(-45deg);
+                    -ms-transform: rotate(-45deg);
+                    -o-transform: rotate(-45deg);
+                }
+            }
+        }
+
+        &:hover {
+            .header_center {
+                .depth_01 {
+                    display: block;
+                }
+
+                .header_bg {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    &.active {
+        // background: transparent;
+    }
+
+}
+
 main {
     .main_section {
         
@@ -17,12 +226,51 @@ main {
                     }
                     .mv_text {
                         position: absolute;
-                        left:0; top:0;
-                        .text_01 {
-                            font-size: 6rem;
+                        left:50%; top:50%;
+                        transform: translate(-50%, -50%);
+                        text-align: center;
+                        span { 
+                            display: block;
                         }
-                        .text_02 {}
-                        .text_03 {}
+                        .text_01 {
+                            font-size: 6.4rem;
+                            line-height: 1;
+                            letter-spacing: -0.64px;
+                            i {
+                                font-family: "asn-thin";
+                                line-height: 1.25;
+                            }
+                            strong {
+                                font-family: "asn-bold";
+                                font-weight: normal;
+                            }
+                        }
+                        .text_02 {
+                            font-family: "asn-thin";
+                            margin-top: 30px;
+                            font-size: 2rem;
+                        }
+                        .text_03 {
+                            position: relative;
+                            margin-top: 90px;
+                            font-size: 2rem;
+                            letter-spacing: -0.2px;
+                            color: #3bb0e2;
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                left: 50%; bottom: 100%;
+                                width:1px; height: 0;
+                                background: #3bb0e2;
+                                transition: all .3s;
+                            }
+                            &:hover {
+                                &::after {
+                                    height: 40px;
+
+                                }
+                            }
+                        }
                     }
                 }
             }
