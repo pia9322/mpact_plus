@@ -1,0 +1,41 @@
+@import url("./common.css");
+
+main {
+    .main_section {
+        
+        &:not(:first-child) {
+            margin-top: 100px;
+        }
+
+        &.main_section_01 {
+            .mv_wrap {
+                
+                .mv {
+                    position: relative;
+                    .mv_img {
+                        width: 100%;
+                    }
+                    .mv_text {
+                        position: absolute;
+                        left:0; top:0;
+                        .text_01 {
+                            font-size: 6rem;
+                        }
+                        .text_02 {}
+                        .text_03 {}
+                    }
+                }
+            }
+        }
+    
+        &.main_section_02 {
+            height: 100vh;
+            border: 1px solid #f00;
+        }
+    }
+
+}
+
+
+
+

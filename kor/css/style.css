@@ -1,0 +1,28 @@
+@import url("./common.css");
+main .main_section:not(:first-child) {
+  margin-top: 100px;
+}
+
+main .main_section.main_section_01 .mv_wrap .mv {
+  position: relative;
+}
+
+main .main_section.main_section_01 .mv_wrap .mv .mv_img {
+  width: 100%;
+}
+
+main .main_section.main_section_01 .mv_wrap .mv .mv_text {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+main .main_section.main_section_01 .mv_wrap .mv .mv_text .text_01 {
+  font-size: 6rem;
+}
+
+main .main_section.main_section_02 {
+  height: 100vh;
+  border: 1px solid #f00;
+}
+/*# sourceMappingURL=style.css.map */
