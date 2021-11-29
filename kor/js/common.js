@@ -112,15 +112,34 @@ $(document).ready(function(){
 
 
     // header_default 
-    let header_right = document.querySelector('.header_right');
-    let header_ham = document.querySelector('.header_ham');
+    let header = document.querySelector('#header'),
+    header_right = document.querySelector('.header_right'),
+    header_center = document.querySelector('.header_center'),
+    header_ham = document.querySelector('.header_ham'),
+    header_full = document.querySelector('.header_full'),
+    depth_01 = document.querySelectorAll('.header_full_list .depth_01'),
+    depth_02 = document.querySelectorAll('.header_full_list .depth_02'),
+    depth_03 = document.querySelectorAll('.header_full_list .depth_03');
+    
+    
+    for(let i=0; i<depth_01.length; i++){
+        depth_01[i].addEventListener('click', function(){
+            $(this).children('.depth_02').slideToggle();
+            $(this).siblings().children('.depth_02').slideUp();
+            return;
+        })
+    }
+
 
     header_ham.addEventListener('click', function() {
         $(this).toggleClass('active');
+        if($(this).hasClass('active')){
+            console.log(header_full);
+            header_full.classList.add('active');
+        } else {
+            header_full.classList.remove('active');
+        }
     })
-
-
-    
 
 
 

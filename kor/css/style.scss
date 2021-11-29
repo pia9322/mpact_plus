@@ -50,7 +50,7 @@
 
 
 // new_header 
-header {
+#header {
     @include header_height();
     z-index: 9999;
     position: fixed;
@@ -64,7 +64,7 @@ header {
     }
     .depth_01 {}
 
-    .header_wrap {
+    > .header_wrap {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -77,6 +77,7 @@ header {
         }
         // logo
         .header_left {
+            z-index: 1;
             margin-top: 5px;
             display: flex;
             align-items: center;
@@ -194,6 +195,7 @@ header {
         .header_right {
             display: flex;
             align-items: center;
+            z-index: 1;
             // header_lang
             
             .header_lang {
@@ -344,12 +346,84 @@ header {
                 }
             }
         }
+
+         // full_header
+        .header_full {
+            position: fixed;
+            left: 0; top: 0; bottom: 0; right: 0;
+            background: #18242e;
+            transition: all .3s;
+            transform: translateX(100%);
+            &.active {
+                transform: translateX(0);
+            }
+            .header_full_wrap {
+                margin-top: 90px;
+                a {
+                    display: block;
+                    transition: all .15s;
+                    text-align: center;
+                    line-height: 1;
+                    &:hover {
+                        color: #34b2e7;
+                    }
+                }
+           
+                .header_full_list {
+                    display: flex;
+                    flex-direction: column;
+                    .depth_01 {
+                        display: inline-block;
+                        > a {
+                            font-size: 5.5rem;
+                            font-family: "asn-t";
+                            color: #34b2e7;
+                            padding-top: 50px;
+                        }
+                        &:nth-child(1){
+                            > a {
+                                padding-top: 0;
+                            }
+                        }
+                        // depth_02
+                        .depth_02 {
+                            display: none;
+                            > li {
+                                display: flex;
+                                flex-direction: column;
+                                > a {
+                                    padding-top: 30px;
+                                    font-size: 4rem;
+                                }
+                                // depth_03
+                                .depth_03 {
+                                    display: flex;
+                                    flex-direction: column;
+                                    > li {
+                                        > a {
+                                            font-size: 2.4rem;
+                                            color: #939598;
+                                            transition: all .15s;
+                                            padding-top: 10px;
+                                            &:hover {
+                                                color: #34b2e7;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
     &.active {
         // background: transparent;
     }
 
+   
 }
 
 main {
@@ -854,10 +928,11 @@ main {
                                             letter-spacing: -0.16px;
                                             color: #a4b5c6;
                                         }
-                                        input {
+                                        input, .inq_box {
                                             background: #567391;
                                             border: none;
                                             height: 40px;
+                                            color: #fff;
                                         }
                                     }
                                     .content.full {
@@ -871,13 +946,13 @@ main {
                                     }
                                     .box_02 {
                                         margin-top: 20px;
-                                        input {
+                                        .inq_box {
                                             height: 190px;
                                         }
                                     }
                                     .box_submit {
                                         margin-top: 20px;
-                                        button {
+                                        .btn_submit {
                                             padding: 27px 70px;
                                             background: #34b3e8;
                                             border: none;
@@ -885,6 +960,11 @@ main {
                                             letter-spacing: -0.18px;
                                             color: #fff;
                                             cursor: pointer;
+                                            transition: all .3s;
+                                            &:hover {
+                                                border-radius: 10px;
+                                                background: rgba($color: #34b3e8, $alpha: .5);
+                                            }
                                         }
                                     }
                                 }
@@ -901,8 +981,9 @@ main {
 }
 
 
-footer#footer {
+#footer {
     background: #18242e;
+    font-size: 1.4rem;
     .footer_wrap {
         @include max-width(1280px);
         padding: 40px 0;

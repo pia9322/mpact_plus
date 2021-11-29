@@ -45,7 +45,7 @@
 <body>
 
     <!-- new_header -->
-    <header>
+    <header id="header">
         <nav class="header_wrap">
 
             <h1 class="header_left">
@@ -118,23 +118,23 @@
 
                 <div class="header_lang">
                     <ul>
-                        <a class="fixed_lang" href="">
+                        <a class="fixed_lang" href="#none">
                             ENG
                             <i class="lang_arrow"></i>
                         </a>
                         <li class="depth_lang">
-                            <a href="">KOR</a>
-                            <a href="">Sub_01</a>
-                            <a href="">Sub_02</a>
+                            <a href="#none">KOR</a>
+                            <a href="#none">Sub_01</a>
+                            <a href="#none">Sub_02</a>
                         </li>
                     </ul>
                 </div>
 
                 <div class="header_sns">
                     <ul>
-                        <li><a href=""><img src="../images/ico/ico_sns_facebook.png" alt="페이스북 아이콘"></a></li>
-                        <li><a href=""><img src="../images/ico/ico_sns_insta.png" alt="인스타그램 아이콘"></a></li>
-                        <li><a href=""><img src="../images/ico/ico_sns_naver.png" alt="네이버 아이콘"></a></li>
+                        <li><a href="#none"><img src="../images/ico/ico_sns_facebook.png" alt="페이스북 아이콘"></a></li>
+                        <li><a href="#none"><img src="../images/ico/ico_sns_insta.png" alt="인스타그램 아이콘"></a></li>
+                        <li><a href="#none"><img src="../images/ico/ico_sns_naver.png" alt="네이버 아이콘"></a></li>
                     </ul>
 
                 </div>
@@ -147,8 +147,62 @@
                 </div>
 
             </nav>
+
+            <nav class="header_full">
+                <div class="header_full_wrap">
+                    <ul class="header_full_list">
+                        <li class="depth_01"><a href="#none">ABOUT US</a>
+                            <ul class="depth_02">
+                                <li><a href="#none">CEO 인사말</a></li>
+                                <li><a href="#none">연혁</a></li>
+                                <li><a href="#none">인증/특허</a></li>
+                                <li><a href="#none">오시는&nbsp;길</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="depth_01"><a href="#none">PRODUCT</a>
+                            <ul class="depth_02">
+                                <li><a href="#none">MPAC+</a>
+                                    <ul class="depth_03">
+                                        <li><a href="#none">방수팩</a></li>
+                                        <li><a href="#none">드라이팩</a></li>
+                                        <li><a href="#none">생존가방</a></li>
+                                        <li><a href="#none">쿨링 어플리케이터</a></li>
+                                        <li><a href="#none">방향제</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#none">JELLY FARM+</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="depth_01"><a href="#none">SHOP</a>
+                            <ul class="depth_02">
+                                <li><a href="#none">스마트스토어</a></li>
+                                <li><a href="#none">조달청</a></li>
+                                <li><a href="#none">공지사항</a></li>
+                                <li><a href="#none">아마존</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="depth_01"><a href="#none">COMMUNITY</a>
+                            <ul class="depth_02">
+                                <li><a href="#none">공지사항</a></li>
+                                <li><a href="#none">보도자료</a></li>
+                                <li><a href="#none">SNS</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="depth_01"><a href="#none">CONTACT</a>
+                            <ul class="depth_02">
+                                <li><a href="#none">1:1 문의</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </nav>
     </header>
+
 
     <!-----------------------------header----------------------------->
     <!-- <?php include_once('../include/header.html') ?> -->
@@ -325,7 +379,7 @@
                                                 </span>
                                             </p>
                                             <i>
-                                                <a href="">
+                                                <a href="#none">
                                                     <img src="../images/ico/ico_product_arrow.png" alt="">
                                                 </a>
                                             </i>
@@ -345,7 +399,7 @@
                                                 </span>
                                             </p>
                                             <i>
-                                                <a href="">
+                                                <a href="#none">
                                                     <img src="../images/ico/ico_product_arrow.png" alt="">
                                                 </a>
                                             </i>
@@ -365,7 +419,7 @@
                                                 </span>
                                             </p>
                                             <i>
-                                                <a href="">
+                                                <a href="#none">
                                                     <img src="../images/ico/ico_product_arrow.png" alt="">
                                                 </a>
                                             </i>
@@ -385,7 +439,7 @@
                                                 </span>
                                             </p>
                                             <i>
-                                                <a href="">
+                                                <a href="#none">
                                                     <img src="../images/ico/ico_product_arrow.png" alt="">
                                                 </a>
                                             </i>
@@ -403,7 +457,7 @@
 
 
                         <div class="more_text_wrap">
-                            <a href="" class="view_more">view more</a>
+                            <a href="#none" class="view_more">view more</a>
                         </div>
                     </div>
                 </div>
@@ -617,13 +671,13 @@
                                 <div class="box_02">
                                     <div class="content full contact_qna">
                                         <label for="">문의내용</label>
-                                        <input type="text">
+                                        <textarea class="inq_box"></textarea>
                                     </div>
                                 </div>
 
                                 <!-- contact 제출 -->
                                 <div class="box_submit">
-                                    <button type="submit">문의하기</button>
+                                    <input class="btn_submit" type="submit" value="문의하기">
                                 </div>
                             </div>
                         </div>
@@ -640,21 +694,21 @@
         <div class="footer_wrap">
             <div class="content_01">
                 <ul class="link_wrap">
-                    <li class="footer_link"><a href="">로그인</a></li>
-                    <li class="footer_link"><a href="">서비스이용약관</a></li>
-                    <li class="footer_link"><a href="">개인정보처리방침</a></li>
-                    <li class="footer_link"><a href="">영상정보처리방침</a></li>
+                    <li class="footer_link"><a href="#none">로그인</a></li>
+                    <li class="footer_link"><a href="#none">서비스이용약관</a></li>
+                    <li class="footer_link"><a href="#none">개인정보처리방침</a></li>
+                    <li class="footer_link"><a href="#none">영상정보처리방침</a></li>
                 </ul>
                 <ul class="info_wrap">
                     <li class="footer_info">
                         <a href="tel:1811-7320">
-                            T. 1811-7320 
+                            T. 1811-7320
                         </a>
                         <a href="tel:02-2274-8890">
-                            F. 02-2274-8890 
+                            F. 02-2274-8890
                         </a>
                         <a href="mailto:mp@mpacplus.com">
-                            E. mp@mpacplus.com / 
+                            E. mp@mpacplus.com /
                         </a>
                         <a href="mailto:info@mpacplus.com">info@mpacplus.com</a>
                     </li>
@@ -668,7 +722,7 @@
                     </li>
                 </ul>
             </div>
-            
+
             <div class="content_02">
                 <img src="../images/ico/logo.png" alt="">
             </div>
