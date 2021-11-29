@@ -9,10 +9,12 @@ $(document).ready(function(){
         loop: true,
         loopAdditionalSlides : 1,
         
-        // autoplay: {
-        //     delay: 5000,
-        //     disableOnInteraction: false,
-        // },
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        
+        touchMoveStopPropagation : true,
         pagination: {
             el: '.swiper-pagination',
             type: 'bullets',
@@ -38,6 +40,46 @@ $(document).ready(function(){
         //     },
         // }
     });
+
+
+    
+    var mainProduct_01 = new Swiper('.main_product_slide_01', {
+        slidesPerView: 4,
+        // centeredSlides: true,
+        loop: true,
+        loopAdditionalSlides : 1,
+        // autoplay: {
+        //     delay: 3000,
+        //     disableOnInteraction: false,
+        // },
+        
+        touchMoveStopPropagation : true,
+        
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+
+
+
+
+    
+
+
+
+    // header_default 
+    let header_right = document.querySelector('.header_right');
+    let header_ham = document.querySelector('.header_ham');
+
+    header_ham.addEventListener('click', function() {
+        $(this).toggleClass('active');
+    })
+
+
+    
+
+
 
 
 

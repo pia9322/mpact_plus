@@ -4,7 +4,7 @@
 */
 
 @font-face {
-    font-family: 'asn-thin';
+    font-family: 'asn-t';
 	font-weight: normal;
 	font-style: normal;
     src: url('../../font/AppleSDGothicNeoT.ttf');
@@ -18,7 +18,26 @@
 }
 
 @font-face {
-    font-family: 'asn-bold';
+    font-family: 'asn-m';
+    src: url('../../font/AppleSDGothicNeoM.ttf');
+	font-weight: normal;
+}
+
+@font-face {
+    font-family: 'asn-sb';
+    src: url('../../font/AppleSDGothicNeoSB.ttf');
+	font-weight: normal;
+}
+
+@font-face {
+    font-family: 'asn-eb';
+    src: url('../../font/AppleSDGothicNeoEB.ttf');
+	font-weight: normal;
+}
+
+
+@font-face {
+    font-family: 'asn-b';
     src: url('../../font/AppleSDGothicNeoB.ttf');
 	font-weight: normal;
 }
@@ -27,11 +46,11 @@
 *{
 	box-sizing: border-box;
 	padding:0; margin:0;
-	font-family: 'asn-l', 'asn-bold', 'asn-thin';
+	font-family: 'asn-l', 'asn-b', 'asn-t', 'asn-m';
 }
 
 .apple_font_100 {
-	font-family: 'asn-thin';
+	font-family: 'asn-t';
 }
 
 html{
@@ -76,6 +95,17 @@ p::first-line {}
 p::first-letter {}
 
 
+.h_2depth_color {
+	color: #939598;
+}
+
+.ponit_color_main {
+	color:#3bb0e2
+}
+.ponit_color_sub_01 {
+	color: #1e3c5a;
+}
+
 
 /* scroll_bar */
 /* 
@@ -105,6 +135,8 @@ html {
 .pc_only {display: block;}
 .ta_only {display: none;}
 .mo_only {display: none;}
+
+
 
 
 
