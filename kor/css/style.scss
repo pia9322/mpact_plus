@@ -372,13 +372,17 @@
                 .header_full_list {
                     display: flex;
                     flex-direction: column;
+                    align-items: center;
                     .depth_01 {
                         display: inline-block;
+                        max-width: 300px;
+                        width: 100%;
                         > a {
                             font-size: 5.5rem;
                             font-family: "asn-t";
                             color: #34b2e7;
                             padding-top: 50px;
+                            text-align: left;
                         }
                         &:nth-child(1){
                             > a {
@@ -392,8 +396,10 @@
                                 display: flex;
                                 flex-direction: column;
                                 > a {
+                                    text-align: left;
                                     padding-top: 30px;
                                     font-size: 4rem;
+                                    padding-left: 30px;
                                 }
                                 // depth_03
                                 .depth_03 {
@@ -401,10 +407,11 @@
                                     flex-direction: column;
                                     > li {
                                         > a {
+                                            text-align: left;
                                             font-size: 2.4rem;
                                             color: #939598;
                                             transition: all .15s;
-                                            padding-top: 10px;
+                                            padding: 10px 0 0 30px;
                                             &:hover {
                                                 color: #34b2e7;
                                             }
@@ -656,6 +663,15 @@ main {
                                                 i {
                                                     display: flex;
                                                     align-items: flex-end;
+                                                    > a {
+                                                        transition: all .15s;
+                                                        &:hover {
+                                                            opacity: .5;
+                                                        }
+                                                        img {
+
+                                                        }
+                                                    }
                                                 }
                                             }
                                         }
@@ -727,9 +743,17 @@ main {
                                 }
                                 .swiper-button-prev {
                                     background: url('../images/ico/product_02_arrow_left.png');
+                                    transition: all .15s;
+                                    &:hover {
+                                        opacity: .5;
+                                    }
                                 }
                                 .swiper-button-next {
                                     background: url('../images/ico/product_02_arrow_right.png');
+                                    transition: all .15s;
+                                    &:hover {
+                                        opacity: .5;
+                                    }
                                 }
 
                                 .product_pagination_02 {
@@ -778,7 +802,7 @@ main {
                                 figcaption {
                                     display: flex;
                                     flex-direction: column;
-                                    justify-content: end;
+                                    justify-content: flex-end;
                                     span {
                                         display: block;
                                     }

@@ -2,6 +2,11 @@ $(document).ready(function(){
     console.log('common_js_start')
     // common_js_start
 
+
+    
+
+    
+
     var Mainswiper = new Swiper('.main_section_01', {
         effect: "fade",
         slidesPerView: 1,
