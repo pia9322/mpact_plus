@@ -3,7 +3,10 @@ $(document).ready(function(){
     // common_js_start
 
 
-    
+
+    AOS.init({
+        duration: 1000,
+    });    
 
     
 
@@ -147,6 +150,9 @@ $(document).ready(function(){
     })
 
 
+
+    // sub_manu_navi 
+    let sub_depth = document.querySelector('#sub_depth');
 
 
 
