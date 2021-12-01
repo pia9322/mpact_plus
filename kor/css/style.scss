@@ -100,6 +100,9 @@
     width: 100%;
     background: rgba($color: #000000, $alpha: 0);
     transition: .3s;
+    &.active {
+        background: rgba($color: #000000, $alpha: .7);
+    }
     a {
         color: #fff;
     }

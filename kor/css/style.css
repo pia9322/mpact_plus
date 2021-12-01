@@ -33,6 +33,10 @@
   transition: .3s;
 }
 
+#header.active {
+  background: rgba(0, 0, 0, 0.7);
+}
+
 #header a {
   color: #fff;
 }

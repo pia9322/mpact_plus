@@ -156,6 +156,33 @@ $(document).ready(function(){
 
 
 
+    
+
+    // jj_add window Scroll event
+    $(window).scroll(function () {
+        let y = $(this).scrollTop(),
+            scrolltop = $(window).scrollTop();
+            // IndexHome = '/',
+            // path = location.pathname;
+
+        function IndexPop() {
+            let popbanner = document.querySelector('.event_banner_01'),
+                popbannerHei = popbanner.offsetTop;
+
+            if (y >= popbannerHei) {
+                $('.banner_pop').addClass("active");
+            } else {
+                $('.banner_pop').removeClass("active");
+            }
+        }
+
+        (y >= 70) ? $("#header").addClass('active') : $("#header").removeClass('active');
+
+    });
+    // jj_add window Scroll event
+
+
+
 
 
 
