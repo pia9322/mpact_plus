@@ -106,7 +106,9 @@ img {vertical-align: top;}
 i {font-style: normal;}
 p::first-line {}
 p::first-letter {}
-
+strong {
+	font-weight: normal;
+}
 
 .h_2depth_color {
 	color: #939598;
