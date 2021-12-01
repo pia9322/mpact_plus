@@ -18,8 +18,45 @@
         {"imgSrc": "16","imgAlt": "인증서_16","imgName_sub":"액티브핏 마스크","imgName": "디자인등록원부"}
     ],
 
-    "product" : [
-        
+    "product_01" : [
+        {
+            "alink": "#none",
+            "product_img": "../images/product/product_mpac_01.png",
+            "product_title": "다용도 방수팩",
+            "product_detail": "엠팩플러스 다용도 방수팩 스마트폰용 테블릿용 중형 대형 색상2종"
+        },
+        {
+            "alink": "#none",
+            "product_img": "../images/product/product_mpac_02.png",
+            "product_title": "엠팩 다이브",
+            "product_detail": "엠팩플러스 D30 수심40m 수중터치 스마트폰 방수팩 엠팩다이브"
+        },
+        {
+            "alink": "#none",
+            "product_img": "../images/product/product_mpac_03.png",
+            "product_title": "엠팩 클래식",
+            "product_detail": "엠팩플러스 C20 카드포켓 스마트폰 방수팩 엠팩클래식"
+        }
+    ],
+    "product_02" : [
+        {
+            "alink": "#none",
+            "product_img": "../images/product/product_mpac_01.png",
+            "product_title": "다용도 방수팩",
+            "product_detail": "엠팩플러스 다용도 방수팩 스마트폰용 테블릿용 중형 대형 색상2종"
+        },
+        {
+            "alink": "#none",
+            "product_img": "../images/product/product_mpac_02.png",
+            "product_title": "엠팩 다이브",
+            "product_detail": "엠팩플러스 D30 수심40m 수중터치 스마트폰 방수팩 엠팩다이브"
+        },
+        {
+            "alink": "#none",
+            "product_img": "../images/product/product_mpac_03.png",
+            "product_title": "엠팩 클래식",
+            "product_detail": "엠팩플러스 C20 카드포켓 스마트폰 방수팩 엠팩클래식"
+        }
     ]
-}
+}   
 

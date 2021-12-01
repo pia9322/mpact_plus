@@ -162,9 +162,6 @@ $(document).ready(function(){
 
 
 
-
-
-
     // common_js_end
     console.log('common_js_end')
 });
