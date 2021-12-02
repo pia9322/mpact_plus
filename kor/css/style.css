@@ -2722,6 +2722,12 @@ main.community.sns .sns_detail figure img {
 
 #footer .footer_wrap .content_01 .link_wrap .footer_link a {
   color: #fff;
+  -webkit-transition: all .15s;
+  transition: all .15s;
+}
+
+#footer .footer_wrap .content_01 .link_wrap .footer_link a:hover {
+  color: #3bb0e2;
 }
 
 #footer .footer_wrap .content_01 .info_wrap {
