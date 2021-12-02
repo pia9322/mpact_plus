@@ -747,6 +747,10 @@ main.main_wrap .main_section.main_section_03 .content_wrap .main_product .main_p
           flex-direction: column;
 }
 
+main.main_wrap .main_section.main_section_03 .content_wrap .main_product .main_product_wrap .swiper_wrap .main_product_slide_01 .swiper-wrapper .product_01:hover i img {
+  opacity: .5;
+}
+
 main.main_wrap .main_section.main_section_03 .content_wrap .main_product .main_product_wrap .swiper_wrap .main_product_slide_01 .swiper-wrapper .product_01 .product_text_wrap {
   margin-top: 20px;
   display: -webkit-box;
@@ -787,13 +791,9 @@ main.main_wrap .main_section.main_section_03 .content_wrap .main_product .main_p
           align-items: flex-end;
 }
 
-main.main_wrap .main_section.main_section_03 .content_wrap .main_product .main_product_wrap .swiper_wrap .main_product_slide_01 .swiper-wrapper .product_01 .product_text_wrap i > a {
+main.main_wrap .main_section.main_section_03 .content_wrap .main_product .main_product_wrap .swiper_wrap .main_product_slide_01 .swiper-wrapper .product_01 .product_text_wrap i img {
   -webkit-transition: all .15s;
   transition: all .15s;
-}
-
-main.main_wrap .main_section.main_section_03 .content_wrap .main_product .main_product_wrap .swiper_wrap .main_product_slide_01 .swiper-wrapper .product_01 .product_text_wrap i > a:hover {
-  opacity: .5;
 }
 
 main.main_wrap .main_section.main_section_03 .content_wrap .main_product .main_product_wrap .more_text_wrap {
@@ -2398,22 +2398,6 @@ main.contact.page_01 .sub_section_01 .content_01 .content_wrap .box_wrap input, 
   border: 1px solid #dbdbdb;
 }
 
-main.contact.page_01 .sub_section_01 .content_01 .content_wrap .box_wrap input::-webkit-input-placeholder {
-  padding-left: 9px;
-}
-
-main.contact.page_01 .sub_section_01 .content_01 .content_wrap .box_wrap input:-ms-input-placeholder {
-  padding-left: 9px;
-}
-
-main.contact.page_01 .sub_section_01 .content_01 .content_wrap .box_wrap input::-ms-input-placeholder {
-  padding-left: 9px;
-}
-
-main.contact.page_01 .sub_section_01 .content_01 .content_wrap .box_wrap input::placeholder {
-  padding-left: 9px;
-}
-
 main.contact.page_01 .sub_section_01 .content_01 .content_wrap .contact_01 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2427,6 +2411,7 @@ main.contact.page_01 .sub_section_01 .content_01 .content_wrap .contact_01 .box_
 main.contact.page_01 .sub_section_01 .content_01 .content_wrap .contact_01 .box_wrap input {
   max-width: 353px;
   height: 50px;
+  padding: 10px;
 }
 
 main.contact.page_01 .sub_section_01 .content_01 .content_wrap .contact_02 {

@@ -683,6 +683,13 @@ main {
                                         .product_01 {
                                             display: flex;
                                             flex-direction: column;
+                                            &:hover {
+                                                    i{
+                                                        img {
+                                                        opacity: .5;
+                                                    }   
+                                                }
+                                            }
                                             img {}
 
                                             .product_text_wrap {
@@ -707,14 +714,9 @@ main {
                                                 i {
                                                     display: flex;
                                                     align-items: flex-end;
-                                                    > a {
+                                                        
+                                                    img {
                                                         transition: all .15s;
-                                                        &:hover {
-                                                            opacity: .5;
-                                                        }
-                                                        img {
-
-                                                        }
                                                     }
                                                 }
                                             }
@@ -2056,7 +2058,6 @@ main {
                             border: 1px solid #dbdbdb;
                         }
                         input::placeholder {
-                            padding-left: 9px
                         }
                     }
                     .contact_01 {
@@ -2066,6 +2067,7 @@ main {
                             input {
                                 max-width: 353px;
                                 height: 50px;
+                                padding: 10px;
                             }
                         }
                     }
