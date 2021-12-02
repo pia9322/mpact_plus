@@ -849,6 +849,9 @@
   main.main_wrap .main_section.main_section_06 .content_wrap > .contact_wrap .contact_box .box_wrap .form_box .box_submit .btn_submit {
     padding: 20px 35px;
   }
+  main.sub .sub_section.visual {
+    height: 300px;
+  }
   main.sub .sub_page_layout.sub_section_01 .sub_page_title .sub_title {
     margin-top: 15px;
     font-size: 15px;
@@ -1013,6 +1016,9 @@
   }
   main.main_wrap .main_section.main_section_06 .content_wrap > .contact_wrap .contact_img {
     height: 120px;
+  }
+  main.sub .sub_section.visual {
+    height: 250px;
   }
 }
 /*# sourceMappingURL=media.css.map */

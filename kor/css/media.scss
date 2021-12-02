@@ -2058,6 +2058,7 @@
             &.contact .visual {}
 
             .sub_section.visual {
+                height: 300px;
                 .visual_img {
                     .visual_title {}
                 }
@@ -3088,7 +3089,17 @@
 
 
             }
+
+         
+            
         }
+
+        &.sub {
+            .sub_section.visual {
+                height: 250px;
+            }
+        }
+       
 
         // ==========================main_index==========================
 
