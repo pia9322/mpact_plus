@@ -430,6 +430,9 @@
     margin: 0 !important;
     padding-right: 0;
     padding-bottom: 10px !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-pack: start !important;
         -ms-flex-pack: start !important;
             justify-content: flex-start !important;
@@ -451,6 +454,7 @@
     margin-left: 5px !important;
     font-size: 16px;
     line-height: 1.5;
+    text-align: left !important;
   }
   main.about.certifi .sub_section_01 .content_01 .content_wrap .certifi_list {
     width: 33%;
