@@ -595,6 +595,7 @@ main.main_wrap .main_section.main_section_01 .mv_wrap .mv .mv_text {
           transform: translate(-50%, -50%);
   text-align: center;
   color: #fff;
+  width: 90%;
 }
 
 main.main_wrap .main_section.main_section_01 .mv_wrap .mv .mv_text span {
@@ -608,22 +609,28 @@ main.main_wrap .main_section.main_section_01 .mv_wrap .mv .mv_text .text_01 {
 }
 
 main.main_wrap .main_section.main_section_01 .mv_wrap .mv .mv_text .text_01 i {
+  display: inline-block;
   font-family: "asn-t";
   line-height: 1.25;
 }
 
 main.main_wrap .main_section.main_section_01 .mv_wrap .mv .mv_text .text_01 strong {
+  display: inline-block;
   font-family: "asn-b";
   font-weight: normal;
 }
 
 main.main_wrap .main_section.main_section_01 .mv_wrap .mv .mv_text .text_02 {
+  -webkit-transition: all .3s;
+  transition: all .3s;
   font-family: "asn-t";
   margin-top: 30px;
   font-size: 2rem;
 }
 
 main.main_wrap .main_section.main_section_01 .mv_wrap .mv .mv_text .view_more {
+  -webkit-transition: all .3s;
+  transition: all .3s;
   margin-top: 90px;
   font-size: 2rem;
   letter-spacing: -0.2px;

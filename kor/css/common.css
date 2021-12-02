@@ -173,13 +173,13 @@ html {
 
 /* media br */
 @media (max-width: 1440px) {
-	/* html{font-size: 50% !important;} */
 	.pc_only {display: block !important;}
 	.ta_only, .mo_only {display: none !important;}
 	/* default */
 }
 @media (max-width: 1100px) {
-	html{font-size: 44% !important;}
+	html{font-size: 50% !important;}
+	/* html{font-size: 44% !important;} */
 }
 
 @media (max-width: 1023px) {
@@ -189,7 +189,7 @@ html {
 }
 
 @media (max-width: 767px) {
-	/* html{font-size: 44% !important;} */
+	html{font-size: 44% !important;}
 	.pc_only {display: none !important;}
 	.ta_only, .mo_only {display: block !important;}
 	/* default */
