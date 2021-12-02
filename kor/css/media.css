@@ -327,7 +327,7 @@
     content: '';
     display: inline-block;
     width: 1px;
-    height: 35px;
+    height: 15px;
     background: #7bcef1;
     margin-left: 15px;
   }
@@ -349,7 +349,7 @@
     content: '';
     display: inline-block;
     width: 1px;
-    height: 35px;
+    height: 15px;
     background: #7bcef1;
     margin-left: 30px;
   }
