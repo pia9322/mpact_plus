@@ -865,11 +865,11 @@
 
             $(window).scroll(function() {
                 let scroll = $(window).scrollTop(),
-                    dh = $(document).height(),
+                    dh = $(document).height() - $('.footer_wrap').height(),
                     wh = $(window).height();
                 let before_bar = document.querySelector('.before_bar');
 
-                scrollPercent = (scroll / (dh - wh)) * 100;
+                scrollPercent = (scroll / (dh - wh)) * 100 ;
                 $(".before_bar").css("height", scrollPercent + "%");
             });
         });
