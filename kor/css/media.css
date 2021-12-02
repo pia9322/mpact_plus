@@ -46,6 +46,9 @@
     width: calc(50% - 10px);
     margin-right: 10px;
   }
+  .table_wrap .table_news .news_wrap > a:nth-child(2n) {
+    margin-right: 0;
+  }
   .table_wrap .table_news .news_wrap > a .news_item figcaption {
     padding: 10px;
   }
@@ -927,6 +930,17 @@
     display: block;
     margin-top: 15px;
     text-align: center;
+  }
+  main.contact.page_01 .sub_section_01 .content_01 .content_wrap .contact_01 {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  main.contact.page_01 .sub_section_01 .content_01 .content_wrap .contact_01 .box_wrap {
+    margin-top: 10px;
+  }
+  main.contact.page_01 .sub_section_01 .content_01 .content_wrap .contact_01 .box_wrap input {
+    max-width: 100%;
+    margin-right: 0;
   }
   main.community.sns .sns_info img {
     max-width: 60px;

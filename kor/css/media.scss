@@ -209,6 +209,9 @@
                 > a {
                     width: calc(50% - 10px);
                     margin-right: 10px;
+                    &:nth-child(2n) {
+                        margin-right: 0;
+                    }
                     .news_item {
                         img {
                         }
@@ -2495,8 +2498,13 @@
                         }
 
                         .contact_01 {
+                            flex-wrap: wrap;
                             .box_wrap {
-                                input {}
+                                margin-top: 10px;
+                                input {
+                                    max-width: 100%;
+                                    margin-right: 0;
+                                }
                             }
                         }
 
