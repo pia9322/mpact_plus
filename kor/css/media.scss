@@ -3126,4 +3126,45 @@
 
     }
 
+
+    // ==========================footer==========================
+    #footer {
+        .footer_wrap {
+            flex-direction: column;
+
+            .content_01 {
+                order: 2;
+
+                .link_wrap {
+                    .footer_link {
+                        margin-right: 10px;
+                        &:not(:first-child) {
+                            margin-left: 0;
+                        }
+
+                        a {
+                        }
+                    }
+                }
+
+                .info_wrap {
+                    .footer_info {
+                        >a {
+                            display: inline-block;
+                            &:hover {}
+                        }
+
+                        &.direction {}
+
+                        &.copyright {}
+                    }
+                }
+            }
+
+            .content_02 {
+                order: 1;
+                margin-bottom: 20px;
+            }
+        }
+    }
 }

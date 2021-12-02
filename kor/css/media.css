@@ -1043,5 +1043,31 @@
   main.sub .sub_section.visual {
     height: 250px;
   }
+  #footer .footer_wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #footer .footer_wrap .content_01 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  #footer .footer_wrap .content_01 .link_wrap .footer_link {
+    margin-right: 10px;
+  }
+  #footer .footer_wrap .content_01 .link_wrap .footer_link:not(:first-child) {
+    margin-left: 0;
+  }
+  #footer .footer_wrap .content_01 .info_wrap .footer_info > a {
+    display: inline-block;
+  }
+  #footer .footer_wrap .content_02 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-bottom: 20px;
+  }
 }
 /*# sourceMappingURL=media.css.map */

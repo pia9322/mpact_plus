@@ -2693,7 +2693,7 @@ main.community.sns .sns_detail figure img {
 
 #footer {
   background: #18242e;
-  font-size: 1.4rem;
+  font-size: 14px;
 }
 
 #footer .footer_wrap {
@@ -2712,6 +2712,8 @@ main.community.sns .sns_detail figure img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 #footer .footer_wrap .content_01 .link_wrap .footer_link:not(:first-child) {
