@@ -108,8 +108,6 @@ $(document).ready(function(){
         slidesPerView: 1,
         centeredSlides: true,
         loop: true,
-        loopAdditionalSlides : 1,
-        spaceBetween : 40, 
         // autoplay: {
         //     delay: 3000,
         //     disableOnInteraction: false,
@@ -121,9 +119,6 @@ $(document).ready(function(){
             prevEl: '.swiper_prev_04',
         },
         breakpoints : {
-            "1100" :{
-                spaceBetween : 0, 
-            },
         }
     });
     

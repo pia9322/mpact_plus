@@ -103,7 +103,7 @@
         .depth_01 {}
 
         >.header_wrap {
-            padding: 0 10px;
+            padding: 0 2.5%;
 
             &:hover {
                 background: transparent;
@@ -484,8 +484,13 @@
                     margin-top: 75px;
                     padding: 0 5%;
                     .content_wrap {
+                        display: flex;
+                        flex-direction: column;
+                        max-width: 100%;
                         .swiper-container {
                             overflow: hidden;
+                            order: 2;
+                            margin-top: 70px;
                             .swiper-wrapper {
                                 .swiper-slide {
                                     img {
@@ -523,6 +528,9 @@
                         }
     
                         .swiper_navi {
+                            position: relative;
+                            order: 1;
+                            text-align: center;
                             .swiper_navi_wrap {
                                 .text_wrap {
                                     > p {
@@ -537,6 +545,7 @@
                                     }
                                 }
                                 .swiper-button-next, .swiper-button-prev {
+                                    display: none !important;
                                     width: 15px; height: 20px;
                                     &:hover {
                                     }
@@ -552,7 +561,7 @@
     
     
                 &.main_section_06 {
-                    margin-top: 120px;
+                    margin-top: 75px;
                     .content_wrap {
                         > .contact_wrap {
                             flex-direction: column;
@@ -769,6 +778,43 @@
 
     .header_center {
         display: none !important;
+    }
+
+
+    
+    // ==========================footer==========================
+    #footer {
+        .footer_wrap {
+            flex-direction: column;
+            .content_01 {
+                order:2;
+                .link_wrap {
+                    .footer_link {
+                        &:not(:first-child) {}
+                        a {}
+                    }
+                }
+
+                .info_wrap {
+                    .footer_info {
+                        >a {
+                            &:hover {
+                            }
+                        }
+
+                        &.direction {
+                        }
+
+                        &.copyright {
+                        }
+                    }
+                }
+            }
+            .content_02 {
+                order:1;
+                margin-bottom: 20px;
+            }
+        }
     }
 }
 
