@@ -886,6 +886,9 @@
   main.about.certifi .sub_section_01 .content_02 .btn_wrap .btn_ico:last-child {
     margin-left: 30px;
   }
+  main.product .sub_section_01 .content_01 .content_wrap .product_navi > ul li {
+    width: auto;
+  }
   main.product .sub_section_01 .content_01 .content_wrap .product_wrap .product_list .product_item {
     width: calc(50% - 10px);
     margin-right: 10px;

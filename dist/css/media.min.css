@@ -226,6 +226,7 @@
   main.about.certifi .sub_section_01 .content_02 .btn_wrap { font-size: 14px; }
   main.about.certifi .sub_section_01 .content_02 .btn_wrap .btn_ico:first-child { margin-right: 30px; }
   main.about.certifi .sub_section_01 .content_02 .btn_wrap .btn_ico:last-child { margin-left: 30px; }
+  main.product .sub_section_01 .content_01 .content_wrap .product_navi > ul li { width: auto; }
   main.product .sub_section_01 .content_01 .content_wrap .product_wrap .product_list .product_item { width: calc(50% - 10px); margin-right: 10px; }
   main.product .sub_section_01 .content_01 .content_wrap .product_wrap .product_list .product_item:nth-child(2n) { margin-right: 0; }
   main.product_more .sub_section_01 .content_02 { margin-top: 50px; }

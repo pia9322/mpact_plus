@@ -211,7 +211,9 @@
 
 #header > .header_wrap .header_full .header_full_wrap .header_full_list .depth_01 { display: inline-block; max-width: 300px; width: 100%; }
 
-#header > .header_wrap .header_full .header_full_wrap .header_full_list .depth_01 > a { font-size: 5.5rem; font-family: "asn-t"; color: #34b2e7; padding-top: 50px; text-align: left; }
+#header > .header_wrap .header_full .header_full_wrap .header_full_list .depth_01 > a { font-size: 5.5rem; font-family: "asn-t"; color: #34b2e7; padding-top: 50px; text-align: left; -webkit-transition: all .15s; transition: all .15s; }
+
+#header > .header_wrap .header_full .header_full_wrap .header_full_list .depth_01 > a:hover { opacity: .5; }
 
 #header > .header_wrap .header_full .header_full_wrap .header_full_list .depth_01:nth-child(1) > a { padding-top: 0; }
 

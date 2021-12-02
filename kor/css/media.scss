@@ -2360,6 +2360,7 @@
                         .product_navi {
                             >ul {
                                 li {
+                                    width: auto;
 
                                     &:not(:last-child) {}
 

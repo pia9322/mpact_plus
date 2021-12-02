@@ -721,6 +721,10 @@
                             color: #34b2e7;
                             padding-top: 50px;
                             text-align: left;
+                            transition: all .15s;
+                            &:hover {
+                                opacity: .5;
+                            }
                         }
                         &:nth-child(1){
                             > a {

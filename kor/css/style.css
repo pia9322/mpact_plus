@@ -739,6 +739,12 @@
   color: #34b2e7;
   padding-top: 50px;
   text-align: left;
+  -webkit-transition: all .15s;
+  transition: all .15s;
+}
+
+#header > .header_wrap .header_full .header_full_wrap .header_full_list .depth_01 > a:hover {
+  opacity: .5;
 }
 
 #header > .header_wrap .header_full .header_full_wrap .header_full_list .depth_01:nth-child(1) > a {
