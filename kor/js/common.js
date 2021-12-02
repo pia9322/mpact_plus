@@ -67,6 +67,16 @@ $(document).ready(function(){
             nextEl: '.swiper_next_02',
             prevEl: '.swiper_prev_02',
         },
+        breakpoints : {
+            "1100" :{
+                slidesPerView: 3,
+                spaceBetween : 20, 
+            },
+            "767" : {
+                slidesPerView: 2,
+            }
+        }
+
     });
 
 
@@ -110,6 +120,11 @@ $(document).ready(function(){
             nextEl: '.swiper_next_04',
             prevEl: '.swiper_prev_04',
         },
+        breakpoints : {
+            "1100" :{
+                spaceBetween : 0, 
+            },
+        }
     });
     
 

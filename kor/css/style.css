@@ -693,6 +693,8 @@ main.main_wrap .main_section.main_section_02 .content_detail.main_about, main.ma
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 main.main_wrap .main_section.main_section_02 .content_detail.main_about figure, main.main_wrap .main_section.main_section_03 .content_detail.main_about figure {
@@ -747,12 +749,12 @@ main.main_wrap .main_section.main_section_03 .content_wrap .main_product .main_p
 
 main.main_wrap .main_section.main_section_03 .content_wrap .main_product .main_product_wrap .swiper-button-next {
   right: -90px;
-  background: url("../images/ico/ico_arrow_big_right.png");
+  background: url("../images/ico/ico_arrow_big_right.png") center/cover no-repeat;
 }
 
 main.main_wrap .main_section.main_section_03 .content_wrap .main_product .main_product_wrap .swiper-button-prev {
   left: -90px;
-  background: url("../images/ico/ico_arrow_big_left.png");
+  background: url("../images/ico/ico_arrow_big_left.png") center/cover no-repeat;
 }
 
 main.main_wrap .main_section.main_section_03 .content_wrap .main_product .main_product_wrap .swiper_wrap {
@@ -776,6 +778,10 @@ main.main_wrap .main_section.main_section_03 .content_wrap .main_product .main_p
 
 main.main_wrap .main_section.main_section_03 .content_wrap .main_product .main_product_wrap .swiper_wrap .main_product_slide_01 .swiper-wrapper .product_01:hover i img {
   opacity: .5;
+}
+
+main.main_wrap .main_section.main_section_03 .content_wrap .main_product .main_product_wrap .swiper_wrap .main_product_slide_01 .swiper-wrapper .product_01 img {
+  width: 100%;
 }
 
 main.main_wrap .main_section.main_section_03 .content_wrap .main_product .main_product_wrap .swiper_wrap .main_product_slide_01 .swiper-wrapper .product_01 .product_text_wrap {
@@ -886,6 +892,9 @@ main.main_wrap .main_section.main_section_04 .content_wrap .swiper-container.mai
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 main.main_wrap .main_section.main_section_04 .content_wrap .swiper-container.main_product_slide_02 .swiper_navi .swiper_navi_wrap .swiper-button-prev, main.main_wrap .main_section.main_section_04 .content_wrap .swiper-container.main_product_slide_02 .swiper_navi .swiper_navi_wrap .swiper-button-next {
@@ -897,7 +906,7 @@ main.main_wrap .main_section.main_section_04 .content_wrap .swiper-container.mai
 }
 
 main.main_wrap .main_section.main_section_04 .content_wrap .swiper-container.main_product_slide_02 .swiper_navi .swiper_navi_wrap .swiper-button-prev {
-  background: url("../images/ico/product_02_arrow_left.png");
+  background: url("../images/ico/product_02_arrow_left.png") center/cover no-repeat;
   -webkit-transition: all .15s;
   transition: all .15s;
 }
@@ -907,7 +916,7 @@ main.main_wrap .main_section.main_section_04 .content_wrap .swiper-container.mai
 }
 
 main.main_wrap .main_section.main_section_04 .content_wrap .swiper-container.main_product_slide_02 .swiper_navi .swiper_navi_wrap .swiper-button-next {
-  background: url("../images/ico/product_02_arrow_right.png");
+  background: url("../images/ico/product_02_arrow_right.png") center/cover no-repeat;
   -webkit-transition: all .15s;
   transition: all .15s;
 }
@@ -1081,7 +1090,7 @@ main.main_wrap .main_section.main_section_05 .content_wrap .swiper_navi .swiper_
 main.main_wrap .main_section.main_section_05 .content_wrap .swiper_navi .swiper_navi_wrap .swiper-button-prev {
   left: auto;
   right: -40px;
-  background: url("../images/ico/ico_arrow_event_right.png") no-repeat;
+  background: url("../images/ico/ico_arrow_event_right.png") no-repeat center/cover;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
@@ -1089,7 +1098,7 @@ main.main_wrap .main_section.main_section_05 .content_wrap .swiper_navi .swiper_
 main.main_wrap .main_section.main_section_05 .content_wrap .swiper_navi .swiper_navi_wrap .swiper-button-next {
   left: auto;
   right: -80px;
-  background: url("../images/ico/ico_arrow_event_right.png") no-repeat;
+  background: url("../images/ico/ico_arrow_event_right.png") no-repeat center/cover;
 }
 
 main.main_wrap .main_section.main_section_06 {
@@ -1105,6 +1114,10 @@ main.main_wrap .main_section.main_section_06 .content_wrap > .contact_wrap {
 
 main.main_wrap .main_section.main_section_06 .content_wrap > .contact_wrap > div {
   width: 50%;
+}
+
+main.main_wrap .main_section.main_section_06 .content_wrap > .contact_wrap .contact_img {
+  background: url("../images/main/contact_01.png") center/cover no-repeat;
 }
 
 main.main_wrap .main_section.main_section_06 .content_wrap > .contact_wrap .contact_img img {
