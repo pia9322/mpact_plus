@@ -376,6 +376,11 @@
           align-items: center;
 }
 
+#header > .header_wrap .header_left a {
+  display: block;
+  width: 120px;
+}
+
 #header > .header_wrap .header_center {
   height: 70px;
   width: 80%;
@@ -2756,5 +2761,10 @@ main.community.sns .sns_detail figure img {
 
 #footer .footer_wrap .content_01 .info_wrap .footer_info.copyright {
   margin-top: 15px;
+}
+
+#footer .footer_wrap .content_02 a {
+  display: block;
+  width: 120px;
 }
 /*# sourceMappingURL=style.css.map */

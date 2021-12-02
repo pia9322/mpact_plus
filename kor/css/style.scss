@@ -409,6 +409,10 @@
             margin-top: 5px;
             display: flex;
             align-items: center;
+            a {
+                display: block;
+                width: 120px;
+            }
         }
 
         // center_menu
@@ -2329,6 +2333,12 @@ main {
                         margin-top: 15px;
                     }
                 }
+            }
+        }
+        .content_02 {
+            a {
+                display: block;
+                width: 120px;
             }
         }
     }
