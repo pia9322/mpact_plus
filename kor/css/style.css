@@ -565,6 +565,19 @@ main.main_wrap .main_section.main_section_01 .main_visual_scroll .bar_img {
 
 main.main_wrap .main_section.main_section_01 .mv_wrap .mv {
   position: relative;
+  border: 3px solid #f00;
+}
+
+main.main_wrap .main_section.main_section_01 .mv_wrap .mv.mv_01 {
+  background: url("../images/main/mv_01.png") no-repeat center/cover;
+}
+
+main.main_wrap .main_section.main_section_01 .mv_wrap .mv.mv_02 {
+  background: url("../images/main/mv_02.png") no-repeat center/cover;
+}
+
+main.main_wrap .main_section.main_section_01 .mv_wrap .mv.mv_03 {
+  background: url("../images/main/mv_03.png") no-repeat center/cover;
 }
 
 main.main_wrap .main_section.main_section_01 .mv_wrap .mv .mv_img {

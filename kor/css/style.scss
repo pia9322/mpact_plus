@@ -540,6 +540,16 @@ main {
                     
                     .mv {
                         position: relative;
+                        border: 3px solid #f00;
+                        &.mv_01 {
+                            background: url("../images/main/mv_01.png") no-repeat center/cover ;
+                        }
+                        &.mv_02 {
+                            background: url("../images/main/mv_02.png") no-repeat center/cover ;
+                        }
+                        &.mv_03 {
+                            background: url("../images/main/mv_03.png") no-repeat center/cover ;
+                        }
                         .mv_img {
                             width: 100%;
                         }
