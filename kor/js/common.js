@@ -108,6 +108,7 @@ $(document).ready(function(){
         slidesPerView: 1,
         centeredSlides: true,
         loop: true,
+        loopAdditionalSlides : 1,
         // autoplay: {
         //     delay: 3000,
         //     disableOnInteraction: false,
@@ -119,6 +120,9 @@ $(document).ready(function(){
             prevEl: '.swiper_prev_04',
         },
         breakpoints : {
+            "1100" :{
+                spaceBetween:5,
+            }
         }
     });
     
@@ -154,8 +158,12 @@ $(document).ready(function(){
         if($(this).hasClass('active')){
             console.log(header_full);
             header_full.classList.add('active');
+            $('.header_lang').addClass('active');
+            $('.header_sns').addClass('active');
         } else {
             header_full.classList.remove('active');
+            $('.header_lang').removeClass('active');
+            $('.header_sns').removeClass('active');
         }
     })
 

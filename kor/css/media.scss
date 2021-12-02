@@ -126,6 +126,10 @@
             .header_right {
 
                 .header_lang {
+                    display: none;
+                    &.active {
+                        display: block;
+                    }
                     .fixed_lang {
                         .lang_arrow {}
                     }
@@ -145,6 +149,10 @@
 
                 // header_sns
                 .header_sns {
+                    display: none;
+                    &.active {
+                        display: block;
+                    }
                     >ul {
                         margin-left: 10px;
 
@@ -484,12 +492,11 @@
                     margin-top: 75px;
                     padding: 0 5%;
                     .content_wrap {
-                        display: flex;
-                        flex-direction: column;
-                        border: 1px solid #f00;
+                        // display: flex;
+                        // flex-direction: column;
                         .swiper-container {
                             overflow: hidden;
-                            order: 2;
+                            // order: 2;
                             margin-top: 70px;
                             .swiper-wrapper {
                                 .swiper-slide {
@@ -528,9 +535,13 @@
                         }
     
                         .swiper_navi {
-                            position: relative;
-                            order: 1;
                             text-align: center;
+                            // position: relative;
+                            // order: 1;
+                            // text-align: center;
+                            transform: translateX(0);
+                        position: static;
+
                             .swiper_navi_wrap {
                                 .text_wrap {
                                     > p {
