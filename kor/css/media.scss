@@ -80,9 +80,10 @@
 
 
 // ====================================4K====================================
-.header_bg {
-    height: 250px !important;
+@media (min-width:2560px) {
+
 }
+
 
 
 // ====================================1440====================================
@@ -2470,8 +2471,10 @@
                 }
 
                 .content_03 {
+                    background: none;
                     .content_wrap {
                         .product_table_wrap {
+                            padding: 0;
                             .product_table_title {}
 
                             .product_table {
