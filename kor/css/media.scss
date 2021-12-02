@@ -2221,18 +2221,27 @@
             }
         }
 
+
         // about_certifi ============================================
         &.about.certifi {
             .sub_section_01 {
                 .content_01 {
-
-                    // margin-top: 50px;
                     .content_wrap {
+                        
                         .certifi_list {
+                            width: calc(50% - 10px);
+                            margin-right: 10px;
+                            &:nth-child(even) {
+                                margin-right: 0;
+                            }
                             img {}
 
                             figcaption {
-                                .text_01 {}
+                                font-size: 16px;
+
+                                .text_01 {
+                                    font-size: 14px;
+                                }
                             }
                         }
                     }
@@ -2240,10 +2249,16 @@
 
                 .content_02 {
                     .btn_wrap {
-                        .btn_ico {
-                            &:first-child {}
+                        font-size: 14px;
 
-                            &:last-child {}
+                        .btn_ico {
+                            &:first-child {
+                                margin-right: 30px;
+                            }
+
+                            &:last-child {
+                                margin-left: 30px;
+                            }
                         }
 
                         .btn_num {}
