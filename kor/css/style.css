@@ -161,6 +161,7 @@
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .table_wrap .table_news .news_wrap > a {
@@ -2522,6 +2523,8 @@ main.contact.page_01 .sub_section_02 .content_01 .content_wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 main.contact.page_01 .sub_section_02 .content_01 .content_wrap .content_list {

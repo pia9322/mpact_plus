@@ -216,6 +216,7 @@
         margin-top: 50px;
         .news_wrap {
             display: flex; justify-content: space-between; flex-wrap: wrap;
+            flex-wrap: wrap;
             > a {
                 width: calc(33% - 20px);
                 margin-bottom: 40px;
@@ -369,7 +370,6 @@
         }
     }
 }
-
 
 
 
@@ -2147,6 +2147,7 @@ main {
                 padding-top: 60px;
                 .content_wrap {
                     display: flex;
+                    flex-wrap: wrap;
                     .content_list {
                         &:last-child {
                             border: none;
