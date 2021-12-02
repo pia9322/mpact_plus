@@ -1265,17 +1265,19 @@
                         .product_wrap {
                             .product_list {
                                 flex-wrap: wrap;
-                                justify-content: space-around;
 
                                 .product_item {
                                     margin-bottom: 30px;
-                                    max-width: 200px;
-
+                                    max-width: 100%;
+                                    width: calc(33% - 10px);
+                                    margin-right: 10px;
+                                    &:nth-child(3n) {
+                                        margin: 0;
+                                    }
                                     >a {
                                         figure {
                                             img {
-                                                max-width: 200px;
-                                                max-height: 200px;
+                                                max-width: 100%;
                                             }
 
                                             figcaption {
@@ -2363,6 +2365,11 @@
                         .product_wrap {
                             .product_list {
                                 .product_item {
+                                    width: calc(50% - 10px);
+                                    margin-right: 10px;
+                                    &:nth-child(2n) {
+                                        margin-right: 0;
+                                    }
                                     >a {
                                         figure {
                                             img {}
