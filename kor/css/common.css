@@ -169,7 +169,12 @@ html {
 
 
 
+@media (min-width: 2560px) {
+	html {
+		font-size: 73%;
+	}
 
+}
 
 /* media br */
 @media (max-width: 1440px) {
