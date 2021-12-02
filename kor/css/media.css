@@ -171,7 +171,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    max-width: 100%;
+    border: 1px solid #f00;
   }
   main.main_wrap .main_section.main_section_05 .content_wrap .swiper-container {
     overflow: hidden;

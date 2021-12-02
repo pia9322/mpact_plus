@@ -486,7 +486,7 @@
                     .content_wrap {
                         display: flex;
                         flex-direction: column;
-                        max-width: 100%;
+                        border: 1px solid #f00;
                         .swiper-container {
                             overflow: hidden;
                             order: 2;

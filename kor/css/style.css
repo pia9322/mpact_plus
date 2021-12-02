@@ -878,6 +878,8 @@ main.main_wrap .main_section.main_section_04 .content_wrap .swiper-container.mai
 }
 
 main.main_wrap .main_section.main_section_04 .content_wrap .swiper-container.main_product_slide_02 .swiper-wrapper .swiper-slide img {
+  -o-object-fit: cover;
+     object-fit: cover;
   margin-left: 150px;
 }
 
