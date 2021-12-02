@@ -346,5 +346,32 @@
   .table_wrap .table_rec tbody tr td {
     padding: 20px;
   }
+  main.main_wrap .main_section.main_section_04 .content_wrap .swiper-container.main_product_slide_02 .swiper_navi {
+    display: none;
+  }
+  main.main_wrap .main_section.main_section_05 .content_wrap .swiper-container .swiper-wrapper .swiper-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main.main_wrap .main_section.main_section_05 .content_wrap .swiper-container .swiper-wrapper .swiper-slide img {
+    max-height: 300px;
+    margin-left: 0;
+    width: 100%;
+  }
+  main.main_wrap .main_section.main_section_05 .content_wrap .swiper-container .swiper-wrapper .swiper-slide figcaption {
+    margin-top: 10px;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    width: 100%;
+  }
+  main.main_wrap .main_section.main_section_06 .content_wrap > .contact_wrap .contact_img {
+    height: 120px;
+  }
 }
 /*# sourceMappingURL=media.css.map */

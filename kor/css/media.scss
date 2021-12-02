@@ -956,4 +956,304 @@
 
         }
     }
+
+
+    
+    // ==========================main_index==========================
+    main {
+        &.main_wrap {
+            .main_section {
+                &:not(:first-child) {}
+    
+                &.main_section_01 {
+                    .main_visual_scroll {
+                        .bar_warp {
+                            span {
+                            }
+                            .bar_background, .bar_move {
+                            }
+                            .bar_background {
+                            }
+                            .bar_move {
+                                .bar_dot {
+                                }
+                            }
+                        }
+                        .bar_img {}
+                    }
+    
+    
+                    .mv_wrap {
+                        
+                        .mv {
+                            &.mv_01 {
+                            }
+                            &.mv_02 {
+                            }
+                            &.mv_03 {
+                            }
+                            .mv_img {
+                            }
+                            .mv_text {
+                                span { 
+                                }
+                                .text_01 {
+                                    i {
+                                    }
+                                    strong {
+                                    }
+                                }
+                                .text_02 {
+                                }
+                                .view_more {
+                                }
+                            }
+                        }
+                    }
+                }
+            
+                &.main_section_02, &.main_section_03 {
+                    .content_wrap {
+                        .content_title {
+                            .text_01 {
+                                strong{
+                                }
+                            }
+                            .text_02 {
+                            }
+                            .text_03 {
+                                strong {
+                                }
+                            }
+                        }
+                    }
+    
+                    .content_detail.main_about {
+                        figure {
+                            img {
+                            }
+                            figcaption {
+                            }
+                            &:nth-child(odd) {
+                            }
+                            &:hover {
+                                img {}
+                            }
+                        }
+    
+                    }
+                }
+    
+                &.main_section_03 {
+                    .content_wrap {
+                        .main_product {
+                            .main_product_wrap {
+                                // swiper-button
+                                .swiper-button-next, .swiper-button-prev {
+                                }
+                                .swiper-button-next {
+                                }
+                                .swiper-button-prev {
+                                }
+    
+                                .swiper_wrap {
+                                    .main_product_slide_01 {
+                                        .swiper-wrapper {
+                                            .product_01 {
+                                                &:hover {
+                                                        i{
+                                                            img {
+                                                        }   
+                                                    }
+                                                }
+                                                img {
+                                                }
+    
+                                                .product_text_wrap {
+                                                    > p {
+                                                        .text_01 {
+                                                        }
+                                                        .text_02 {
+                                                        }
+                                                    }
+                                                    i {
+                                                        img {
+                                                        }
+                                                    }
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+    
+    
+                                .more_text_wrap {
+                                    
+                                    .view_more {
+                                    }
+                                }
+                            }
+                        }
+                    }
+    
+                }
+    
+                &.main_section_04 {
+                    .content_wrap {
+                        .swiper-container.main_product_slide_02 {
+                            .swiper-wrapper {
+                                .swiper-slide {
+                                    .text_wrap {
+                                        .text_01 {
+                                        }
+                                        .text_02 {
+                                        }
+                                    }
+                                    img {
+                                    }
+                                }
+                            }
+    
+                        
+                            .swiper_navi {
+                                display: none;
+                                .swiper_navi_wrap {
+                                    .swiper-button-prev, .swiper-button-next {
+                                    }
+                                    .swiper-button-prev {
+                                    }
+                                    .swiper-button-next {
+                                    }
+    
+                                    .product_pagination_02 {
+                                        .swiper-pagination-current {}
+                                        .swiper-pagination-total {}
+                                    }
+                                }
+    
+                            }
+                            
+                        }
+                    }
+                }
+    
+    
+                &.main_section_05 {
+                    .content_wrap {
+                        .swiper-container {
+                            .swiper-wrapper {
+                                .swiper-slide {
+                                    display: flex;
+                                    flex-direction: column;
+                                    img {
+                                        max-height: 300px; margin-left:0;
+                                        width: 100%;
+                                    }
+                                    figcaption {
+                                        margin-top: 10px;
+                                        order: 2;
+                                        width: 100%;
+                                        span {
+                                        }
+                                        .text_01 {
+                                   
+                                        }
+                                        .text_02 {
+                                            .main_event_date {}
+                                        }
+                                        .text_04.view_more {
+                                            &::after {
+                                            }
+                                        }
+                                    }
+                                    &.swiper-slide-active {
+                                    }
+                                }
+                            }
+                        }
+    
+                        .swiper_navi {
+                            .swiper_navi_wrap {
+                                .text_wrap {
+                                    > p {
+                                        .text_01 {
+                                            strong  {
+                                            }
+                                        }
+                                        .text_02 {
+                                            strong {
+                                            }
+                                        }
+                                    }
+                                }
+                                .swiper-button-next, .swiper-button-prev {
+                                    &:hover {
+                                    }
+                                }
+                                .swiper-button-prev {
+                                }
+                                .swiper-button-next {
+                                }
+                            }
+                        }
+                    }
+                }
+    
+    
+                &.main_section_06 {
+                    .content_wrap {
+                        > .contact_wrap {
+                            > div {
+                            }
+                            .contact_img {
+                                height: 120px;
+                                img {
+                                }
+                            }
+    
+                            .contact_box {
+                                .box_wrap {
+                                    .text_wrap {
+                                        .text_01 {
+                                            strong {
+                                            }
+                                        }
+                                        .text_02 {
+                                        }
+                                    }
+    
+                                    .form_box {
+                                        .content {
+                                            label {
+                                            }
+                                            input, .inq_box {
+                                            }
+                                        }
+                                        .content.full {
+                                        }
+                                        .box_01 {
+                                            .content:nth-child(even) {
+                                            }
+                                        }
+                                        .box_02 {
+                                            .inq_box {
+                                            }
+                                        }
+                                        .box_submit {
+                                            .btn_submit {
+                                                &:hover {}
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+    
+    
+            }
+        }
+    }
+
 }
