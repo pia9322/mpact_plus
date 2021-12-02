@@ -478,6 +478,10 @@ main.main_wrap {
   overflow: hidden;
 }
 
+main.main_wrap .main_section.main_section_01 {
+  height: 100vh;
+}
+
 main.main_wrap .main_section.main_section_01 .main_visual_scroll {
   position: absolute;
   left: 0;

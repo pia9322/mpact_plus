@@ -487,6 +487,7 @@ main {
             }
 
             &.main_section_01 {
+                height: 100vh;
                 .main_visual_scroll {
                     @include absolute-top(0, 50%);
                     z-index: 2;
