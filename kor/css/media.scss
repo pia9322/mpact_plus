@@ -1,252 +1,500 @@
-  // ====================================1440====================================
+@mixin max-width($width) {
+    max-width: $width;
+    margin: 0 auto;
+}
 
-  @media (max-width: 1440px) {
-      
-  }
+@mixin layoutBoxColor {
+    border: 2px solid #f00;
+}
 
+@mixin header-height {
+    height: 70px;
+}
+
+@mixin header-height-1100 {
+    height: 60px;
+}
+
+
+@mixin absolute-left($left, $top) {
+    position: absolute;
+    left: $left;
+    top: $top;
+    transform: translateX(-$left);
+}
+
+@mixin absolute-top($left, $top) {
+    position: absolute;
+    left: $left;
+    top: $top;
+    transform: translateY(-$top);
+}
+
+@mixin visual-text($fs) {
+    width: 100%;
+    height: 100%;
+    font-size: $fs;
+    color: #fff;
+    font-family: "asn-t";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.25;
+    letter-spacing: -0.64px;
+    text-transform: uppercase;
+}
 
+@mixin sub-menu-bar($height, $margin) {
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: $height;
+    background: #7bcef1;
+    margin-left: $margin;
+}
 
+@mixin sub-page-title($fs) {
+    font-size: $fs;
+    letter-spacing: -0.4px;
+    color: #1e3c5a;
+    font-family: "asn-sb";
+    margin-top: 100px;
+    text-align: center;
+}
 
+@mixin margin-top-1920() {
+    margin-top: 100px;
+}
 
-  // ====================================1023====================================
-  @media (max-width: 1023px) {}
+@mixin margin-bottom-1920() {
+    margin-bottom: 100px;
+}
 
 
+// ====================================1440====================================
 
-  // ====================================767====================================
-  @media (max-width: 767px) {
-      .table_wrap {
-          .table_header {
-              .table_company_select {
-                  display: none;
+@media (max-width: 1440px) {}
 
-                  .search_form {
-                      fieldset {
-                          legend {}
 
-                          .form_01_title {}
 
-                          .form_01_selectbox {
-                              select {}
-                          }
-                      }
-                  }
-              }
 
-              .table_text_search {
-                  margin-top: 3rem;
-                  width: 100%;
 
-                  .search_form {
-                      width: 100%;
+// ====================================1100====================================
+@media (max-width: 1100px) {
 
-                      fieldset {
-                          width: 100%;
 
-                          .form_02_selectbox {
-                              display: flex;
-                              width: 100%;
+    // new_header 
+    #header {
+        @include header-height-1100();
 
-                              select {}
+        &.active {}
 
-                              input[type=text] {
-                                  margin-left: 1.5rem;
-                                  flex: 2;
-                              }
+        a {}
 
-                              input[type=submit] {
-                                  margin-left: 1.5rem;
-                              }
-                          }
-                      }
-                  }
-              }
+        .depth_01 {}
 
-          }
+        >.header_wrap {
+            padding: 0 10px;
+            &:hover {
+                background: transparent;
+            }
 
-          .table_notice {
+            // logo
+            .header_left {
+                margin-top: 0;
+                a {
+                }
+            }
 
-              thead {
+            // center_menu
+            .header_center {
+                opacity: 0;
+                visibility: hidden;
+            }
 
-                  tr {
-                      th {
-                          &:nth-of-type(1) {}
+            // header_right 
+            .header_right {
 
-                          &:nth-of-type(1) {}
+                .header_lang {
+                    .fixed_lang {
+                        .lang_arrow {}
+                    }
 
-                          &:nth-of-type(2) {}
+                    .depth_lang {
+                        a {
+                            &:hover {}
+                        }
+                    }
 
-                          &:nth-of-type(3) {}
+                    &:hover .depth_lang {}
 
-                          &:nth-of-type(4),
-                          &:nth-of-type(5) {}
-                      }
+                    &:hover .lang_arrow {}
+                }
 
-                  }
-              }
 
-              tbody {
-                  tr {
-                      td {
-                          &:nth-child(2) {
-                              span {}
-                          }
 
-                          &:nth-child(1) {}
+                // header_sns
+                .header_sns {
+                    >ul {
+                        margin-left: 10px;
+
+                        >li {
+
+                            a {
+                                img {}
+                            }
+
+                            &:not(:first-child) {}
+
+                            &:hover {}
+                        }
+                    }
+                }
+
+
+                // header_ham
+                .header_ham {
+                    margin-left: 25px;
 
-                          &:nth-child(3) {}
-                      }
+                    &.active {
+                        span {}
+                    }
 
-                      .notice_download {
-                          a {
-                              display: block;
+                    span {
+                        &:nth-of-type(1) {}
 
-                              img {
-                                  width: 15px;
-                              }
-                          }
-                      }
-                  }
+                        &:nth-of-type(2) {}
 
-                  &.active {}
-              }
+                        &:nth-of-type(3) {}
+                    }
+                }
 
 
+                &.active {
+                    span:nth-of-type(1) {}
 
+                    span:nth-of-type(2) {}
 
-          }
+                    span:nth-of-type(3) {}
+                }
+            }
 
-          .table_notice_more {
-              >a {}
-          }
-      }
-  }
+            &:hover {
+                .header_center {
+                    .depth_01 {
+                        display: none;
+                    }
 
+                    .header_bg {
+                        display: none;
+                    }
+                }
+            }
 
-  // ====================================479====================================
-  @media (max-width: 479px) {
+            // full_header
+            .header_full {
+                &.active {}
 
-      // 479
-      .table_wrap {
-          .table_header {
-              .table_company_select {
-                  .search_form {
-                      fieldset {
-                          legend {}
+                .header_full_wrap {
+                    @include layoutBoxColor();
+                    margin-top: 0;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
 
-                          .form_01_title {}
+                    a {
+                        &:hover {}
+                    }
 
-                          .form_01_selectbox {
-                              select {}
-                          }
-                      }
-                  }
-              }
+                    .header_full_list {
+                        .depth_01 {
+                            width: 100%;
 
-              .table_text_search {
-                  .search_form {
-                      fieldset {
-                          .form_02_selectbox {
-                              select {}
+                            >a {
+                                padding-top: 15px;
+                            }
 
-                              input[type=text] {}
+                            &:nth-child(1) {
+                                >a {}
+                            }
 
-                              input[type=submit] {}
-                          }
-                      }
-                  }
-              }
+                            // depth_02
+                            .depth_02 {
+                                display: none;
 
-          }
+                                >li {
+                                    >a {
+                                        padding: 15px 0 0 15px;
+                                    }
+                                    // depth_03
+                                    .depth_03 {
+                                        >li {
+                                            >a {
+                                                padding: 15px 0 0 15px;
+                                                &:hover {}
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
 
-          .table_notice {
-              table-layout: auto;
+        &.active {
+            // background: transparent;
+        }
 
-              thead {
-                  tr {
-                      th {
-                          padding: 2rem;
 
-                          &:nth-of-type(1),
-                          &:nth-of-type(3),
-                          &:nth-of-type(4) {}
+    }
 
-                          &:nth-of-type(2) {
-                              width: auto;
-                          }
-                      }
 
-                  }
-              }
+}
 
-              tbody {
-                  tr {
-                      td {
-                          padding: 20px;
-                      }
 
-                      .notice_download {
-                          a {}
-                      }
-                  }
 
-                  &.active {}
-              }
+// ====================================767====================================
+@media (max-width: 767px) {
+    .table_wrap {
+        .table_header {
+            .table_company_select {
+                display: none;
 
+                .search_form {
+                    fieldset {
+                        legend {}
 
+                        .form_01_title {}
 
+                        .form_01_selectbox {
+                            select {}
+                        }
+                    }
+                }
+            }
 
-          }
+            .table_text_search {
+                margin-top: 3rem;
+                width: 100%;
 
+                .search_form {
+                    width: 100%;
 
-          .table_rec {
-              table-layout: auto;
+                    fieldset {
+                        width: 100%;
 
-              thead {
-                  tr {
-                      th {
+                        .form_02_selectbox {
+                            display: flex;
+                            width: 100%;
 
-                          &:nth-of-type(1),
-                          &:nth-of-type(4),
-                          &:nth-of-type(5) {
-                              width: auto;
-                          }
+                            select {}
 
-                          &:nth-of-type(2) {
-                              width: auto;
-                          }
+                            input[type=text] {
+                                margin-left: 1.5rem;
+                                flex: 2;
+                            }
 
-                          &:nth-of-type(3) {
-                              width: auto;
-                          }
-                      }
+                            input[type=submit] {
+                                margin-left: 1.5rem;
+                            }
+                        }
+                    }
+                }
+            }
 
-                  }
-              }
+        }
 
-              tbody {
-                  tr {
-                      td {
-                          padding: 20px;
+        .table_notice {
 
-                          &:nth-child(2) {
-                              span {}
-                          }
+            thead {
 
-                          &:nth-child(3) {}
-                      }
+                tr {
+                    th {
+                        &:nth-of-type(1) {}
 
-                      .notice_download {
-                          a {}
-                      }
-                  }
+                        &:nth-of-type(1) {}
 
-                  &.active {}
-              }
+                        &:nth-of-type(2) {}
 
+                        &:nth-of-type(3) {}
 
+                        &:nth-of-type(4),
+                        &:nth-of-type(5) {}
+                    }
 
+                }
+            }
 
-          }
-      }
-  }
+            tbody {
+                tr {
+                    td {
+                        &:nth-child(2) {
+                            span {}
+                        }
+
+                        &:nth-child(1) {}
+
+                        &:nth-child(3) {}
+                    }
+
+                    .notice_download {
+                        a {
+                            display: block;
+
+                            img {
+                                width: 15px;
+                            }
+                        }
+                    }
+                }
+
+                &.active {}
+            }
+
+
+
+
+        }
+
+        .table_notice_more {
+            >a {}
+        }
+    }
+
+    .header_center {
+        display: none !important;
+    }
+}
+
+
+// ====================================479====================================
+@media (max-width: 479px) {
+
+    // 479
+    .table_wrap {
+        .table_header {
+            .table_company_select {
+                .search_form {
+                    fieldset {
+                        legend {}
+
+                        .form_01_title {}
+
+                        .form_01_selectbox {
+                            select {}
+                        }
+                    }
+                }
+            }
+
+            .table_text_search {
+                .search_form {
+                    fieldset {
+                        .form_02_selectbox {
+                            select {}
+
+                            input[type=text] {}
+
+                            input[type=submit] {}
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .table_notice {
+            table-layout: auto;
+
+            thead {
+                tr {
+                    th {
+                        padding: 2rem;
+
+                        &:nth-of-type(1),
+                        &:nth-of-type(3),
+                        &:nth-of-type(4) {}
+
+                        &:nth-of-type(2) {
+                            width: auto;
+                        }
+                    }
+
+                }
+            }
+
+            tbody {
+                tr {
+                    td {
+                        padding: 20px;
+                    }
+
+                    .notice_download {
+                        a {}
+                    }
+                }
+
+                &.active {}
+            }
+
+
+
+
+        }
+
+
+        .table_rec {
+            table-layout: auto;
+
+            thead {
+                tr {
+                    th {
+
+                        &:nth-of-type(1),
+                        &:nth-of-type(4),
+                        &:nth-of-type(5) {
+                            width: auto;
+                        }
+
+                        &:nth-of-type(2) {
+                            width: auto;
+                        }
+
+                        &:nth-of-type(3) {
+                            width: auto;
+                        }
+                    }
+
+                }
+            }
+
+            tbody {
+                tr {
+                    td {
+                        padding: 20px;
+
+                        &:nth-child(2) {
+                            span {}
+                        }
+
+                        &:nth-child(3) {}
+                    }
+
+                    .notice_download {
+                        a {}
+                    }
+                }
+
+                &.active {}
+            }
+
+
+
+
+        }
+    }
+}
