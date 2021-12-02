@@ -849,6 +849,9 @@
     margin-top: 15px;
     font-size: 15px;
   }
+  main.about.ceo .sub_section_01 .content_01 > figure img {
+    opacity: .4;
+  }
   main.product_more .sub_section_01 .content_02 {
     margin-top: 50px;
   }

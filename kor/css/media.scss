@@ -2148,7 +2148,9 @@
 
                 .content_01 {
                     >figure {
-                        img {}
+                        img {
+                            opacity: .4;
+                        }
 
                         figcaption {
                             span {}
