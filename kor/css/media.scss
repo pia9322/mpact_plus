@@ -803,7 +803,7 @@
                             @include absolute-left(0, 0);
                         }
                         &:last-child::before {
-                            display: none;
+                            left: 20px;
                         }
                         &:first-child {
                             padding-top: 40px;

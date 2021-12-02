@@ -6,10 +6,10 @@ $(document).ready(function(){
 
     AOS.init({
         duration: 1000,
-        disable: function () {
-            var maxWidth = 767;
-            return window.innerWidth < maxWidth;
-        }
+        // disable: function () {
+        //     var maxWidth = 767;
+        //     return window.innerWidth < maxWidth;
+        // }
     });    
 
     

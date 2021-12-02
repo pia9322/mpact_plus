@@ -340,7 +340,7 @@
             transform: translateX(0);
   }
   main.about.history .sub_section_01 .history_line .history_wrap .history_ul:last-child::before {
-    display: none;
+    left: 20px;
   }
   main.about.history .sub_section_01 .history_line .history_wrap .history_ul:first-child {
     padding-top: 40px;
