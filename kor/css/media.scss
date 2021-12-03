@@ -981,6 +981,147 @@
 
         // sub_page default (main visual / sub menu bar)
 
+
+        // about_company ============================================
+        &.about.company {
+            .sub_section_01 {
+                .content_01.company_slide {
+                    .swiper-wrapper {
+                        .swiper-slide {
+                            img {
+                            }
+                            figcaption {
+                                background: rgba($color: #000000, $alpha: .6);
+                                padding: 20px;
+                                right: 0; top: 50%; 
+                                width: 100%; height: 100%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                flex-direction: column;
+                                span.text_01 {
+                                    text-align: center;
+                                    color: #fff !important;
+                                }
+                                span.text_02 {
+                                    text-align: center;
+                                    color: #fff !important;
+                                }
+                            }
+                        }
+                    }
+                    .swiper-pagination {
+                        margin-bottom: 10px;
+                        .swiper-pagination-bullet {}
+                        .swiper-pagination-bullet-active {}
+                    }
+                }
+
+                .content_02 {
+                    .content_wrap {
+                        .content_info {
+                            &:not(first-child) {
+                                margin-top: 60px;
+                            }
+                            &.info_01 {}
+                            img {
+                                order: 1;
+                                max-width: 250px;
+                            }
+                            figcaption {
+                                > span {
+                                    &.text_01 {
+                                        .point_num {
+                                        }
+                                    }
+                                    &.text_02 {
+                                        font-size: 16px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }       
+
+            .sub_section_02, .sub_section_03, .sub_section_04 {
+                margin-top: 50px; 
+                .content_01 {
+                    .content_wrap {
+                        .section_title {
+                            > span {
+                                i {
+                                }
+                            }
+                            .text_01 {
+                            }
+                            .text_02 {
+                                font-size: 16px;
+                            }
+                        }
+                        .section_content {
+                            margin-top: 60px;
+                            .content_wrap {
+                                .bar {
+                                } 
+                                .history_img {
+                                    img {
+                                        max-width: 100%;
+                                    }
+                                }
+
+
+                            }
+                        }
+                    }
+                }
+
+            }
+            .sub_section_03 {
+                margin-top: 0 !important;
+                .content_02 {
+                    margin-top: 50px;
+                    .content_wrap {
+                        figure {
+                            width: 30%;
+                            &:last-child {
+                            }
+                            img {}
+                            figcaption {
+                                font-size: 16px;
+                                margin-top: 10px;
+                            }
+                        }
+                    }   
+                }
+            }
+            .sub_section_04 {
+                margin: 50px 0 75px 0;
+                padding: 0 5%;
+                .content_01 {
+                    .content_wrap {
+                        .section_table {
+                            .table_wrap {
+                                margin-top: 20px;
+                                table {
+                                    tbody {
+                                        tr {
+                                            &:nth-child(even) {
+                                            }
+                                            font-size: 14px;
+                                            th {
+                                            }
+                                            td {
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }   
+                }
+            }
+        }
         // about_ceo ============================================
         &.about.ceo {
             .sub_section_01 {
@@ -1628,6 +1769,174 @@
 
 
 
+
+@media (max-width: 900px) {
+
+    main {
+
+        // about_company ============================================
+        &.about.company {
+            .sub_section_01 {
+                .content_01.company_slide {
+                    .swiper-wrapper {
+                        .swiper-slide {
+                            img {
+                            }
+                            figcaption {
+                                span.text_01 {
+                                }
+                                span.text_02 {
+                                }
+                            }
+                        }
+                    }
+                    .swiper-pagination {
+                        .swiper-pagination-bullet {}
+                        .swiper-pagination-bullet-active {}
+                    }
+                }
+
+                .content_02 {
+                    .content_wrap {
+                        .content_info {
+                            position: relative;
+                            &:not(first-child) {
+                                margin-top: 70px;
+                            }
+                            &.info_01 {}
+                            img {
+                                display: none;
+                                // position: absolute;
+                                // right: 0; top: 50%;
+                                // transform: translateY(-50%);
+                                // opacity: .25;
+                            }
+                            figcaption {
+                                width: 100%;
+                                > span {
+                                    &.text_01 {
+                                        .point_num {
+                                        }
+                                    }
+                                    &.text_02 {
+                                        font-size: 16px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }       
+
+            .sub_section_02, .sub_section_03, .sub_section_04 {
+                margin-top: 50px; 
+                .content_01 {
+                    .content_wrap {
+                        .section_title {
+                            > span {
+                                i {
+                                }
+                            }
+                            .text_01 {
+                            }
+                            .text_02 {
+                                font-size: 16px;
+                            }
+                        }
+                        .section_content {
+                            margin-top: 60px;
+                            .content_wrap {
+                                .bar {
+                                } 
+                                .history_img {
+                                    img {
+                                        max-width: 100%;
+                                        &.pc_ver {
+                                            display: none;
+                                        }
+                                        &.mo_ver {
+                                            display: block;
+                                        }
+                                    }
+                                }
+
+
+                            }
+                        }
+                    }
+                }
+
+            }
+            .sub_section_03 {
+                .content_01 {
+                    .section_content {
+                        .content_wrap {
+                            .history_img {
+                                img {
+                                    max-width: 400px !important;
+                                    width: 100%;
+                                }
+                            }
+                        }   
+                    }
+                }
+                .content_02 {
+                    margin-top: 50px;
+                    .content_wrap {
+                        flex-wrap: wrap;
+                        figure {
+                            width: 100%;
+                            margin-top: 30px;
+                            border: none;
+                            &:first-child {
+                                margin-top: 0;
+                            }
+                            &:last-child {
+                            }
+                            img {
+                                max-width: 75px;
+                            }
+                            figcaption {
+                                font-size: 16px;
+                                margin-top: 10px;
+                            }
+                        }
+                    
+                    }   
+                }
+            }
+            .sub_section_04 {
+                margin: 50px 0 75px 0;
+                padding: 0 5%;
+                .content_01 {
+                    .content_wrap {
+                        .section_table {
+                            .table_wrap {
+                                margin-top: 20px;
+                                table {
+                                    tbody {
+                                        tr {
+                                            &:nth-child(even) {
+                                            }
+                                            font-size: 14px;
+                                            th {
+                                            }
+                                            td {
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }   
+                }
+            }
+        }
+    }
+
+}
+
+
 // ====================================767====================================
 @media (max-width: 767px) {
 
@@ -2155,9 +2464,9 @@
 
 
         }
-
         // sub_page default (main visual / sub menu bar)
 
+      
 
 
         // about_ceo ============================================

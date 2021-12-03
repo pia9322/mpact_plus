@@ -130,7 +130,21 @@ $(document).ready(function(){
         }
     });
     
+    let company_slide = new Swiper('.company_slide', {
+        slidesPerView: 1,
+        centeredSlides: true,
+        // autoplay: {
+        //     delay: 3000,
+        //     disableOnInteraction: false,
+        // },
+        touchMoveStopPropagation : true,
 
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+        },
+    });
+    
 
 
     
