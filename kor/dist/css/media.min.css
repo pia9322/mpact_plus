@@ -124,7 +124,6 @@
   main.about.direction .sub_section_01 .content_02 { margin-top: 60px; }
   main.shop .sub_section_01 .content_01 { margin-top: 50px; }
   main.shop .sub_section_01 .content_01 .content_wrap .content_list { margin-bottom: 20px; }
-  main.shop .sub_section_01 .content_01 .content_wrap .content_list > a > div img { max-width: 140px; }
   main.shop .sub_section_01 .content_01 .content_wrap .content_list > a figcaption .text_01 { font-size: 16px; }
   main.product .sub_section_01 .content_01 .content_wrap .product_navi > ul { -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -ms-flex-wrap: wrap; flex-wrap: wrap; }
   main.product .sub_section_01 .content_01 .content_wrap .product_navi > ul li { margin-bottom: 10px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; height: 100%; }
@@ -227,8 +226,6 @@
   main.about.certifi .sub_section_01 .content_02 .btn_wrap { font-size: 14px; }
   main.about.certifi .sub_section_01 .content_02 .btn_wrap .btn_ico:first-child { margin-right: 30px; }
   main.about.certifi .sub_section_01 .content_02 .btn_wrap .btn_ico:last-child { margin-left: 30px; }
-  main.shop .sub_section_01 .content_01 .content_wrap .content_list { width: 50%; text-align: center; }
-  main.shop .sub_section_01 .content_01 .content_wrap .content_list > a > div img { max-width: 100px; }
   main.product .sub_section_01 .content_01 .content_wrap .product_navi > ul li { width: auto; }
   main.product .sub_section_01 .content_01 .content_wrap .product_wrap .product_list .product_item { width: calc(50% - 10px); margin-right: 10px; }
   main.product .sub_section_01 .content_01 .content_wrap .product_wrap .product_list .product_item:nth-child(2n) { margin-right: 0; }

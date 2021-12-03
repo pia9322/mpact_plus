@@ -504,6 +504,9 @@
   main.shop .sub_section_01 .content_01 .content_wrap .content_list {
     margin-bottom: 20px;
   }
+  main.shop .sub_section_01 .content_01 .content_wrap .content_list > a > div img {
+    max-width: 140px;
+  }
   main.shop .sub_section_01 .content_01 .content_wrap .content_list > a figcaption .text_01 {
     font-size: 16px;
   }
@@ -885,6 +888,13 @@
   }
   main.about.certifi .sub_section_01 .content_02 .btn_wrap .btn_ico:last-child {
     margin-left: 30px;
+  }
+  main.shop .sub_section_01 .content_01 .content_wrap .content_list {
+    width: 50%;
+    text-align: center;
+  }
+  main.shop .sub_section_01 .content_01 .content_wrap .content_list > a > div img {
+    max-width: 100px;
   }
   main.product .sub_section_01 .content_01 .content_wrap .product_navi > ul li {
     width: auto;

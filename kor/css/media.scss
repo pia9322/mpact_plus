@@ -1226,7 +1226,9 @@
                                 }
 
                                 >div {
-                                    img {}
+                                    img {
+                                        max-width: 140px;
+                                    }
                                 }
 
                                 figcaption {
@@ -2333,13 +2335,17 @@
                 .content_01 {
                     .content_wrap {
                         .content_list {
+                            width: 50%;
+                            text-align: center;
                             >a {
                                 &:hover {
                                     .text_01 {}
                                 }
 
                                 >div {
-                                    img {}
+                                    img {
+                                        max-width: 100px;
+                                    }
                                 }
 
                                 figcaption {
